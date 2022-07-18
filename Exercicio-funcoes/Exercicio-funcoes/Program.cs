@@ -21,16 +21,12 @@ namespace Exercicio_funcoes
                     valor1 = int.Parse(Console.ReadLine());
                     valor2 = int.Parse(Console.ReadLine());
 
-                    soma = valor1 + valor2;
-                    subtracao = valor1 - valor2;
-                    produto = valor1 * valor2;
-                    divisao = valor1 / valor2;
 
                     Console.WriteLine("Para os números escolhidos, os resultados são: ");
-                    Console.WriteLine("Soma =" + " " + soma);
-                    Console.WriteLine("Subtração =" + " " + subtracao);
-                    Console.WriteLine("Multiplicação =" + " " + produto);
-                    Console.WriteLine("Divisão =" + " " + divisao);
+                    Console.WriteLine("Soma =" + " " + Soma(valor1, valor2));
+                    Console.WriteLine("Subtração =" + " " + Subtracao(valor1, valor2));
+                    Console.WriteLine("Multiplicação =" + " " + Produto(valor1, valor2));
+                    Console.WriteLine("Divisão =" + " " + Divisao(valor1, valor2));
 
                     Console.WriteLine("Deseja continuar? Aperte 0 para prosseguir ou 2 para desligar");
                     i = int.Parse(Console.ReadLine());
@@ -51,11 +47,11 @@ namespace Exercicio_funcoes
         {
             return x - y;
         }
-        public static int produto(int x, int y)
+        public static int Produto(int x, int y)
         {
             return x * y;
         }
-        public static int divisao(int x, int y)
+        public static int Divisao(int x, int y)
         {
             if (DiferenteDeZero(y)) throw new Exception("Não é permitido dividir por 0");
             return x / y;
