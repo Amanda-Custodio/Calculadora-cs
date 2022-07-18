@@ -27,12 +27,12 @@ namespace Exercicio_funcoes
                     divisao = valor1 / valor2;
 
                     Console.WriteLine("Para os números escolhidos, os resultados são: ");
-                    Console.WriteLine("Soma " + soma);
-                    Console.WriteLine("Subtração " + subtracao);
-                    Console.WriteLine("Multiplicação " + produto);
-                    Console.WriteLine("Divisão " + divisao);
+                    Console.WriteLine("Soma =" + " " + soma);
+                    Console.WriteLine("Subtração =" + " " + subtracao);
+                    Console.WriteLine("Multiplicação =" + " " + produto);
+                    Console.WriteLine("Divisão =" + " " + divisao);
 
-                    Console.WriteLine("Deseja continuar? Aperte 0 para prosseguir");
+                    Console.WriteLine("Deseja continuar? Aperte 0 para prosseguir ou 2 para desligar");
                     i = int.Parse(Console.ReadLine());
 
                 }
